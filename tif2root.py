@@ -14,7 +14,7 @@ def read_tif_write_root(fileH5, fileROOT, ev, run, option='recreate'):
     image = fileH5
     tf = ROOT.TFile.Open(fileROOT,option)
     (nx,ny) = image.shape
-    title = "pic_run%5d_%d" % run,ev
+    title = "pic_run%05d_%d" % (run,ev)
     h2 = ROOT.TH2D(title,title,nx,0,nx,ny,0,ny)
     h2.GetXaxis().SetTitle('x')
     h2.GetYaxis().SetTitle('y')
