@@ -52,7 +52,7 @@ if __name__ == '__main__':
             print "You need to specify the file name where the files are. Exiting."
             exit(0)
         else:
-            run = options.inputFile.split('.')[0].split('-')[0]
+            run = int(options.inputFile.split('.')[0].split('-')[0])
             outputFile = options.outputFile
             inputFile = options.inputFile
             print "Converting TIF files into ", outputFile
