@@ -9,7 +9,7 @@ import numpy as np
 import ROOT
 from libtiff import TIFF
 
-def read_h5_write_root(fileH5, fileROOT, ev, run, option='recreate'):
+def read_tif_write_root(fileH5, fileROOT, ev, run, option='recreate'):
     
     image = fileH5
     tf = ROOT.TFile.Open(fileROOT,option)
