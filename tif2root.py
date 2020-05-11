@@ -54,5 +54,6 @@ if __name__ == '__main__':
         else:
             run = options.inputFile.split('.')[0].split('-')[0]
             outputFile = options.outputFile
+            inputFile = options.inputFile
             print "Converting TIF files into ", outputFile
             tif2root_array(args,inputFile,outputFile,run)
